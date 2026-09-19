@@ -134,3 +134,23 @@ def test_mail_failure_token_cleanup_and_rate_limit(account_env,monkeypatch):
             assert (await c.post('/api/accounts/email-link',json={'email':'missing@example.com'})).status_code==429
     asyncio.run(flow())
 
+
+def test_private_owner_preview_uses_capability_without_enabling_registration(account_env,monkeypatch):
+    token='owner-preview-token-that-is-long-enough-123456'
+    monkeypatch.setattr(studio,'OWNER_PREVIEW_TOKEN',token)
+    monkeypatch.setattr(accounts,'policy_ready',lambda:False)
+    async def flow():
+        async with httpx.AsyncClient(transport=httpx.ASGITransport(app=studio.app),base_url='http://test') as c:
+            assert (await c.post('/api/owner-preview',json={'token':'wrong-token-that-is-still-at-least-32-chars'})).status_code==404
+            assert (await c.post('/api/owner-preview',json={'token':token})).status_code==200
+            session=(await c.get('/api/session')).json()
+            assert session['authenticated'] is True
+            assert session['owner_preview'] is True
+            assert session['account_mode'] is False
+            assert (await c.get('/api/options')).status_code==200
+            assert (await c.post('/api/accounts/register',json=registration())).status_code==503
+            assert (await c.post('/api/logout')).status_code==200
+            assert (await c.get('/api/options')).status_code==401
+    asyncio.run(flow())
+
+
