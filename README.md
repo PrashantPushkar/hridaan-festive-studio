@@ -83,6 +83,8 @@ INR amounts are calculations from actual reported tokens, not final invoices. US
 
 Account mode is the default. Registration collects name, email and an internationally validated phone number. Optional product-update consent starts unchecked and is timestamped; it can be changed after sign-in. No automatic WhatsApp marketing subscription is made. Email links verify and sign in, expire after 20 minutes, are single-use, and are stored only as SHA-256 hashes. Revocable sessions expire in 30 days using signed HttpOnly cookies (Secure in production). Verification URLs are excluded from Uvicorn access logging; configure proxy logs to omit query strings too.
 
+For temporary owner access before account registration is enabled, set a random 32+ character `OWNER_PREVIEW_TOKEN` and open `/owner-preview#TOKEN`. The fragment is exchanged for a signed HttpOnly session and then removed from the browser address. Keep the link private and remove or rotate the environment value once normal sign-in works. This does not enable public registration or remove the global generation limit.
+
 Greetings belong to the account ID. Signing in with the same email restores the collection and lifetime allowance. A SQLite write transaction reserves the credit before scheduling an attempt. A successfully rendered AI image settles the run and credit in one transaction. AI artwork failures, render failures and template fallback preserve the credit. Concurrent attempts are rejected. After success, generation is blocked before any AI call; editing and downloading saved images remain available. Text failure with successful AI artwork still consumes the creation. Restart recovery releases interrupted work. Logout, clearing cookies, repeat registration or rejecting an image never reset the allowance.
 
 SMTP credentials are server-only in environment configuration; `.env.local` is ignored by Git. Live domain verification and SMTP delivery were confirmed with ZeptoMail, including user confirmation of the test email. Account integration tests mock mail and images and do not send additional messages or make paid calls. At deployment, PUBLIC_BASE_URL must be the final HTTPS Python-service origin; localhost verification links work only on this computer.
@@ -94,4 +96,5 @@ Before public launch, review policies covering registered users, name/email/phon
 Account milestones are stored without PII in SQLite studio_events. Client requests cannot forge backend completion events. Marketing-site analytics remain separate and consent-based; no CRM synchronization is configured.
 
 Validation: run python -m pytest tests -q from this app directory. Existing feature tests explicitly enable local legacy mode. Account tests cover verification/reuse/expiry, persistent login, concurrent requests, failed generations and access isolation. Browser QA covers registration, verification, calendar fill, limits, early access, logout and mobile layout.
+
 
