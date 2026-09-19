@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create thoughtful festival greetings with your brand. A creative studio by Hridaan Labs.">
+  <meta name="theme-color" content="#172e2b">
+  <title>Festive Studio — Hridaan Labs</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Festive Studio home"><span class="brand-mark">h<span>·</span></span><span>HRIDAAN LABS<span class="brand-product">Festive Studio</span></span></a>
+    <div class="topbar-right"><span class="edition">A little more meaning. Every occasion.</span><button id="logout" class="quiet" hidden>Sign out</button></div>
+  </header>
+
+  <main id="studio" hidden>
+    <section class="heading"><div><p class="eyebrow">THE GREETING WORKSHOP</p><h1>Make the occasion <em>yours.</em></h1><p class="intro">Thoughtful words. Beautiful artwork. Your brand.</p></div><span class="edition-tag">FESTIVE STUDIO / 01</span></section>
+    <section id="account-summary" class="account-summary" hidden><div><strong id="account-name"></strong><p id="free-status" role="status"></p></div><button id="early-access" class="secondary" type="button" hidden>Get more creations · Join early access</button><label class="toggle-label"><input id="account-consent" type="checkbox"> Email me occasional Hridaan Labs product updates</label></section>
+    <div class="workspace">
+      <aside class="setup panel">
+        <div class="panel-title"><span class="step">01</span><h2>Set the occasion</h2></div>
+        <form id="generate-form">
+          <button id="open-calendar" class="secondary full" type="button">Choose from Calendar</button>
+          <label for="festival-search">Find your festival</label>
+          <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="festival-search" type="search" placeholder="Name, state or community…" autocomplete="off"></div>
+          <p id="festival-count" class="hint" role="status" aria-live="polite"></p>
+          <div id="festival-list" class="festival-list" role="group" aria-label="Choose a festival"></div>
+          <p id="festival-description" class="festival-description"></p>
+          <details class="occasion-details"><summary>2026 date &amp; source</summary><p id="festival-date"></p><p id="festival-note"></p><span id="festival-sources"></span></details>
+          <label for="greeting-date">Date for this greeting</label><input id="greeting-date" type="date" required>
+          <p id="date-guidance" class="hint"></p>
+          <label for="date-placement">Mention the date</label><select id="date-placement"><option value="image">Subtle date on image</option><option value="text">In the message</option><option value="both">On image and in message</option><option value="none">Do not include</option></select>
+          <div class="field-divider"></div>
+          <label for="sender-type">Who is this from?</label><select id="sender-type"><option value="company">Company / organisation</option><option value="individual">Individual</option></select>
+          <label id="brand-label" for="brand-name">Company name</label><input id="brand-name" value="Hridaan Labs" maxlength="48" required placeholder="Company or organisation name">
+          <div id="logo-field"><label for="logo-file">Company logo <span class="optional">optional</span></label><input id="logo-file" type="file" accept="image/png,image/jpeg,image/webp"><p class="hint">PNG, JPEG or WebP, up to 2 MB. Your original logo is placed on the artwork.</p><div id="logo-preview-wrap" hidden><img id="logo-preview" alt="Uploaded company logo"><button id="remove-logo" type="button" class="quiet">Remove logo</button></div></div>
+          <label for="persona">Persona</label><select id="persona"></select><p id="persona-description" class="hint"></p>
+          <label for="channel">Made for</label>
+          <select id="channel"><option value="instagram_feed">Instagram post · 4:5</option><option value="instagram_stories">Instagram story · 9:16</option><option value="whatsapp_chat">WhatsApp chat · 4:5</option><option value="whatsapp_status">WhatsApp status · 9:16</option></select>
+          <label for="render-mode">Artwork</label><select id="render-mode"><option value="ai">AI art direction</option><option value="template">Illustrated template · no AI call</option></select>
+          <label class="toggle-label" for="generate-text"><input id="generate-text" type="checkbox" checked> Generate AI greeting text</label>
+          <p id="text-generation-hint" class="hint">On by default. Switch off to skip paid text and art-direction calls; AI artwork can still be generated with a standard prompt.</p>
+          <button id="generate" class="primary" type="submit"><span aria-hidden="true">✦</span> Create greeting <span aria-hidden="true">↗</span></button>
+          <p class="hint" id="generation-hint">AI artwork can take a couple of minutes. Review before sharing.</p>
+        </form>
+      </aside>
+
+      <section class="canvas-panel" aria-label="Greeting preview">
+        <div class="canvas-top"><span class="small-label">YOUR CANVAS</span><span id="dimensions" class="dimension">1080 × 1350</span></div>
+        <div class="canvas-stage">
+          <div id="empty-canvas" class="empty-canvas"><div class="empty-frame"><span class="empty-star" aria-hidden="true">✦</span><span class="empty-caption">A good wish<br>goes a long way.</span><span class="empty-brand">YOUR NEXT GREETING STARTS HERE</span></div></div>
+          <div id="generation-state" class="generation-state" hidden><span class="spinner" aria-hidden="true"></span><h2>Creating something thoughtful.</h2><p id="generation-progress">Writing your greeting and planning the artwork…</p></div>
+          <img id="preview" class="preview" hidden alt="Generated greeting preview">
+        </div>
+        <div class="canvas-bottom"><span id="canvas-caption">Select an occasion to begin</span><span id="image-source" class="source-tag" hidden></span></div>
+      </section>
+
+      <aside class="review panel">
+        <div class="panel-title"><span class="step">02</span><h2>Make it personal</h2></div>
+        <div id="run-cost" class="cost-panel" hidden><strong id="cost-total"></strong><p id="cost-note" class="hint"></p><details><summary>Usage &amp; calculation</summary><div id="cost-breakdown"></div><p class="hint"><a href="https://developers.openai.com/api/docs/pricing" target="_blank" rel="noopener">OpenAI pricing</a> · <a href="https://www.exchangerate-api.com" target="_blank" rel="noopener">Rates By Exchange Rate API</a></p></details></div>
+        <div id="review-empty" class="review-empty"><span class="line-icon" aria-hidden="true">Aa</span><h3>A final touch, from you.</h3><p>Your greeting copy will appear here. Refine the words, preview the artwork, and save it when it feels right.</p><div class="review-check"><span>✓</span> Crisp, editable greeting text</div><div class="review-check"><span>✓</span> Sized for your chosen channel</div><div class="review-check"><span>✓</span> Download a full-resolution PNG</div></div>
+        <form id="edit-form" hidden>
+          <div id="review-status" class="review-status">Ready for review</div>
+          <div id="warnings" class="warning" role="status" hidden></div>
+          <p id="run-settings" class="hint"></p>
+          <label for="edit-date">Greeting date</label><input id="edit-date" type="date">
+          <label for="edit-date-placement">Date placement</label><select id="edit-date-placement"><option value="image">On image</option><option value="text">In message</option><option value="both">Both</option><option value="none">None</option></select>
+          <label for="headline">Greeting headline</label><input id="headline" maxlength="70" required>
+          <label for="tagline">A little thought</label><input id="tagline" maxlength="55">
+          <label for="subline">Sign-off</label><input id="subline" maxlength="80">
+          <label for="message">Message to share</label><textarea id="message" rows="5" maxlength="1000" required></textarea>
+          <button id="save" class="secondary full" type="submit">Update preview</button>
+          <div class="action-pair"><button id="copy" class="quiet bordered" type="button">Copy message</button><button id="download" class="quiet bordered" type="button">Download PNG ↓</button></div>
+          <button id="approve" class="primary" type="button">Approve greeting <span aria-hidden="true">✓</span></button>
+          <button id="reject" class="quiet reject" type="button">Set this greeting aside</button>
+          <p class="hint">Approval saves your final version. Nothing is posted or sent automatically.</p>
+        </form>
+      </aside>
+    </div>
+    <section class="library"><div class="library-heading"><div><p class="eyebrow">YOUR COLLECTION</p><h2>Good wishes, kept.</h2></div><span id="history-count" class="muted">0 greetings</span></div><div id="history" class="history"><p class="library-empty">Your saved greetings will live here, ready when you need them.</p></div><p class="history-note">Your private collection is saved to your verified account. Sign in with the same email to return to it.</p></section>
+    <footer><span>FESTIVE STUDIO</span><span>A product by Hridaan Labs</span></footer>
+  </main>
+
+  <dialog id="calendar-dialog" aria-labelledby="calendar-title"><div class="calendar-top"><div><p class="eyebrow">PLAN YOUR GREETINGS</p><h2 id="calendar-title">Festival calendar · 2026</h2></div><button id="close-calendar" class="secondary" type="button" aria-label="Close calendar">Close ×</button></div>
+    <p class="calendar-intro">Choose an occasion to create a greeting. Dates are regional references, not a nationwide holiday list. Check the source for local changes and moon-sighting dates.</p>
+    <div class="calendar-controls"><button id="previous-month" type="button" class="secondary" aria-label="Previous month">←</button><label for="calendar-month" class="sr-only">Month</label><select id="calendar-month"></select><button id="next-month" type="button" class="secondary" aria-label="Next month">→</button><label for="calendar-filter" class="sr-only">Filter calendar</label><input id="calendar-filter" type="search" placeholder="Filter by festival, state or community"></div>
+    <p id="calendar-count" class="hint" aria-live="polite"></p><div id="calendar-grid" class="calendar-grid"></div><div id="calendar-agenda" class="calendar-agenda"></div>
+  </dialog>
+  <section id="login-panel" class="login-panel" hidden><p class="eyebrow">YOUR PRIVATE WORKSHOP</p><h1>Welcome to<br><em>Festive Studio.</em></h1><p>Unlock your studio to create and review greetings.</p><form id="login-form"><label for="password">Studio password</label><input type="password" id="password" autocomplete="current-password" required><button class="primary" type="submit">Unlock studio ↗</button></form></section>
+  <section id="account-panel" class="login-panel" hidden>
+    <p class="eyebrow">ONE FREE CREATION</p><h1>A thoughtful wish.<br><em>A personal touch.</em></h1>
+    <p>Create your account, verify your email and make your first AI greeting free. No password to remember.</p>
+    <div class="action-pair"><button id="show-register" class="secondary" type="button">Create account</button><button id="show-signin" class="secondary" type="button">Sign in</button></div>
+    <p id="account-availability" class="hint" role="status"></p>
+    <form id="register-form"><label for="full-name">Full name</label><input id="full-name" autocomplete="name" minlength="2" maxlength="100" required>
+    <label for="register-email">Email</label><input id="register-email" type="email" autocomplete="email" maxlength="254" required>
+    <label for="country">Phone country</label><select id="country" autocomplete="country" required></select>
+    <label for="phone">Phone number</label><input id="phone" type="tel" autocomplete="tel" maxlength="30" required><p class="hint">Include your country code if entering an international number. We do not automatically subscribe you to WhatsApp messages.</p>
+    <label class="toggle-label"><input id="marketing-consent" type="checkbox"> Email me occasional Hridaan Labs product updates (optional)</label>
+    <p class="hint"><a id="account-privacy" href="https://hridaanlabs.com/privacy" target="_blank" rel="noopener">Privacy policy</a><span id="account-terms-wrap" hidden> · <a id="account-terms" target="_blank" rel="noopener">Terms of use</a></span></p>
+    <button id="register-submit" class="primary" type="submit">Send verification link ↗</button></form>
+    <form id="signin-form" hidden><label for="signin-email">Your account email</label><input id="signin-email" type="email" autocomplete="email" maxlength="254" required><button id="signin-submit" class="primary" type="submit">Email a sign-in link ↗</button></form>
+    <p id="email-status" role="status" aria-live="polite"></p><button id="resend-link" class="quiet" type="button" hidden>Resend link</button>
+    <p class="hint">Links expire after 20 minutes and can be used once. One successful AI image per account; failed artwork attempts do not use your free creation.</p>
+    <a href="https://hridaanlabs.com/tools">Explore Hridaan Labs Micro Tools</a>
+  </section>
+  <div id="boot" class="boot">Opening your studio…</div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
+

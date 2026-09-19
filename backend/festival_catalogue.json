@@ -1,0 +1,1482 @@
+{
+  "year": 2026,
+  "reviewed_on": "2026-09-18",
+  "additions": [
+    {
+      "name": "Engineers' Day",
+      "date": "2026-09-15",
+      "category": "professional",
+      "regions": [
+        "India"
+      ],
+      "aliases": [
+        "Engineer's Day",
+        "National Engineers Day",
+        "Visvesvaraya"
+      ],
+      "source_urls": [
+        "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=155201&lang=2&reg=3"
+      ],
+      "blurb": "Honouring engineers and their contributions to society.",
+      "motif": "confetti",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Fixed annual observance; displayed for 2026. This listing does not imply a nationwide public holiday.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Karnataka Rajyotsava",
+      "date": "2026-11-01",
+      "category": "regional",
+      "regions": [
+        "Karnataka"
+      ],
+      "aliases": [
+        "Kannada Rajyotsava",
+        "Karnataka Rajotsava",
+        "Rajyothsava",
+        "Karnataka Formation Day"
+      ],
+      "source_urls": [
+        "https://old.karnatakatourism.org/destinations/karnataka-rajyothsava-day/"
+      ],
+      "blurb": "Celebrating Kannada language, culture and Karnataka's formation.",
+      "motif": "confetti",
+      "palette": [
+        "#691D25",
+        "#AB3033",
+        "#F1C232",
+        "#FFE6A0"
+      ],
+      "date_note": "Fixed annual observance; displayed for 2026. This listing does not imply a nationwide public holiday.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Vishwakarma Puja",
+      "date": "2026-09-18",
+      "category": "hindu",
+      "regions": [
+        "West Bengal",
+        "India"
+      ],
+      "aliases": [
+        "Viswakarma Puja",
+        "Vishwakarma Jayanti",
+        "Vishwakarma Jayanthi"
+      ],
+      "source_urls": [
+        "https://wbxpress.com/holiday-viswakarma-puja-2026/"
+      ],
+      "blurb": "Honouring Vishwakarma and the skill of craftspeople, artisans and makers.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "West Bengal holiday revised to 18 September 2026 by notification 3446-F(P2), reproduced by WBXPress. Other regional calendars may use 17 September.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Ugadi",
+      "date": "2026-03-19",
+      "category": "regional",
+      "regions": [
+        "Karnataka",
+        "Andhra Pradesh",
+        "Telangana"
+      ],
+      "aliases": [
+        "Yugadi",
+        "Telugu New Year",
+        "Kannada New Year"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "A new year celebrated across Telugu and Kannada communities.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Gudi Padwa",
+      "date": "2026-03-19",
+      "category": "regional",
+      "regions": [
+        "Maharashtra",
+        "Goa"
+      ],
+      "aliases": [
+        "Gudhi Padwa",
+        "Marathi New Year"
+      ],
+      "source_urls": [
+        "https://maharashtra.gov.in/site/Upload/pdf/Public-Holiday-2026.pdf"
+      ],
+      "blurb": "Welcoming the Marathi new year with hope and renewal.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Cheti Chand",
+      "date": "2026-03-19",
+      "category": "regional",
+      "regions": [
+        "India",
+        "Sindhi community"
+      ],
+      "aliases": [
+        "Jhulelal Jayanti",
+        "Sindhi New Year"
+      ],
+      "source_urls": [
+        "https://saiindia.gov.in/defence/new-delhi/en/page-defence-new-delhi-holidaylist"
+      ],
+      "blurb": "The Sindhi new year and celebration of Jhulelal.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "19 March follows the central restricted-holiday list; regional/community calendars may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Puthandu",
+      "date": "2026-04-14",
+      "category": "regional",
+      "regions": [
+        "Tamil Nadu",
+        "Puducherry"
+      ],
+      "aliases": [
+        "Tamil New Year",
+        "Varusha Pirappu"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "Welcoming the Tamil new year.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Vishu",
+      "date": "2026-04-15",
+      "category": "regional",
+      "regions": [
+        "Kerala"
+      ],
+      "aliases": [
+        "Vishukkani",
+        "Malayali"
+      ],
+      "source_urls": [
+        "https://www.pmindia.gov.in/en/news_updates/pm-extends-greetings-on-the-auspicious-occasion-of-vishu/"
+      ],
+      "blurb": "A season of auspicious beginnings, celebrated with Vishukkani.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Poila Boishakh",
+      "date": "2026-04-15",
+      "category": "regional",
+      "regions": [
+        "West Bengal",
+        "Bengali community"
+      ],
+      "aliases": [
+        "Pohela Boishakh",
+        "Nababarsha",
+        "Bengali New Year"
+      ],
+      "source_urls": [
+        "https://saiindia.gov.in/defence/new-delhi/en/page-defence-new-delhi-holidaylist"
+      ],
+      "blurb": "Welcoming the Bengali new year.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Bohag Bihu",
+      "date": "2026-04-15",
+      "category": "regional",
+      "regions": [
+        "Assam"
+      ],
+      "aliases": [
+        "Rongali Bihu",
+        "Assamese New Year"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "Spring and the Assamese new year.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Assam lists 14-16 April; 15 April is the new-year reference date here.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Magh Bihu",
+      "date": "2026-01-14",
+      "category": "regional",
+      "regions": [
+        "Assam"
+      ],
+      "aliases": [
+        "Bhogali Bihu"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "A harvest celebration bringing communities together.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Assam lists 14-15 January; 14 January is the reference date here.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Kati Bihu",
+      "date": "2026-10-18",
+      "category": "regional",
+      "regions": [
+        "Assam"
+      ],
+      "aliases": [
+        "Kongali Bihu"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "An Assamese observance of hope for the growing crop.",
+      "motif": "diya",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Tusu Puja",
+      "date": "2026-01-14",
+      "category": "regional",
+      "regions": [
+        "Assam",
+        "Jharkhand",
+        "West Bengal",
+        "Odisha"
+      ],
+      "aliases": [
+        "Tusu Parab",
+        "Tusu festival"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "A harvest-season folk celebration.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "14 January follows the Assam holiday list; local celebrations may vary.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Bhogi",
+      "date": "2026-01-14",
+      "category": "regional",
+      "regions": [
+        "Andhra Pradesh",
+        "Telangana",
+        "Tamil Nadu"
+      ],
+      "aliases": [
+        "Bhogi Pongal"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "Welcoming the harvest season and fresh beginnings.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Pongal",
+      "date": "2026-01-15",
+      "category": "regional",
+      "regions": [
+        "Tamil Nadu",
+        "Puducherry"
+      ],
+      "aliases": [
+        "Thai Pongal",
+        "Surya Pongal"
+      ],
+      "source_urls": [
+        "https://py.gov.in/sites/default/files/listofholidays-2026.pdf_0.pdf"
+      ],
+      "blurb": "A Tamil harvest celebration with gratitude for abundance.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Mattu Pongal",
+      "date": "2026-01-16",
+      "category": "regional",
+      "regions": [
+        "Tamil Nadu",
+        "Puducherry"
+      ],
+      "aliases": [
+        "Cattle Pongal"
+      ],
+      "source_urls": [
+        "https://py.gov.in/sites/default/files/listofholidays-2026.pdf_0.pdf"
+      ],
+      "blurb": "Giving thanks to cattle and the farming community.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Kanuma",
+      "date": "2026-01-16",
+      "category": "regional",
+      "regions": [
+        "Andhra Pradesh",
+        "Telangana"
+      ],
+      "aliases": [
+        "Kanumu"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "A Telugu harvest-season celebration of farming life.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Thiruvalluvar Day",
+      "date": "2026-01-16",
+      "category": "regional",
+      "regions": [
+        "Tamil Nadu",
+        "Puducherry"
+      ],
+      "aliases": [
+        "Tiruvalluvar Day"
+      ],
+      "source_urls": [
+        "https://py.gov.in/sites/default/files/listofholidays-2026.pdf_0.pdf"
+      ],
+      "blurb": "Honouring the Tamil poet and ethical teachings of Thiruvalluvar.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Basava Jayanti",
+      "date": "2026-04-20",
+      "category": "regional",
+      "regions": [
+        "Karnataka",
+        "Telangana"
+      ],
+      "aliases": [
+        "Basava Jayanthi",
+        "Basavanna",
+        "Lingayat"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "Honouring Basavanna and ideals of equality and service.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Bonalu",
+      "date": "2026-08-10",
+      "category": "regional",
+      "regions": [
+        "Telangana"
+      ],
+      "aliases": [
+        "Mahakali Bonalu"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "A Telangana celebration honouring Mahakali.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Telangana government holiday: 10 August. Local temple celebrations occur on different days across the season.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Bathukamma",
+      "date": "2026-10-18",
+      "category": "regional",
+      "regions": [
+        "Telangana"
+      ],
+      "aliases": [
+        "Saddula Bathukamma",
+        "Bathukamma Panduga"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "Telangana's floral festival celebrating life and togetherness.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "18 October is Saddula Bathukamma, the concluding celebration; the festival spans several days.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Varalakshmi Vratham",
+      "date": "2026-08-21",
+      "category": "hindu",
+      "regions": [
+        "Telangana",
+        "Andhra Pradesh",
+        "Karnataka",
+        "Tamil Nadu"
+      ],
+      "aliases": [
+        "Varamahalakshmi",
+        "Varalakshmi Vratam"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "A devotional observance honouring Goddess Lakshmi.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "21 August follows the Telangana government calendar; verify the local temple calendar.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Ayudha Puja",
+      "date": "2026-10-19",
+      "category": "hindu",
+      "regions": [
+        "Tamil Nadu",
+        "Karnataka",
+        "Puducherry"
+      ],
+      "aliases": [
+        "Ayutha Pooja",
+        "Saraswathi Pooja",
+        "Shastra Puja"
+      ],
+      "source_urls": [
+        "https://py.gov.in/sites/default/files/listofholidays-2026.pdf_0.pdf"
+      ],
+      "blurb": "Honouring the tools of work, learning and craftsmanship.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Karthika Pournami",
+      "date": "2026-11-24",
+      "category": "hindu",
+      "regions": [
+        "Andhra Pradesh",
+        "Telangana"
+      ],
+      "aliases": [
+        "Kartik Purnima",
+        "Karthika Purnima"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "A full-moon observance of devotion and lamps.",
+      "motif": "diya",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Nuakhai",
+      "date": "2026-09-15",
+      "category": "regional",
+      "regions": [
+        "Odisha",
+        "Chhattisgarh",
+        "Assam"
+      ],
+      "aliases": [
+        "Naukhai",
+        "Nuakhai Juhar"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "Welcoming the new harvest and sharing gratitude.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Parsi New Year",
+      "date": "2026-08-15",
+      "category": "zoroastrian",
+      "regions": [
+        "India",
+        "Parsi community"
+      ],
+      "aliases": [
+        "Navroz",
+        "Nowruz",
+        "Nauraj",
+        "Shahenshahi"
+      ],
+      "source_urls": [
+        "https://maharashtra.gov.in/site/Upload/pdf/Public-Holiday-2026.pdf"
+      ],
+      "blurb": "A new beginning in the Shahenshahi Parsi calendar.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Shahenshahi calendar date, not the March spring-equinox Nowruz.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Chhatrapati Shivaji Maharaj Jayanti",
+      "date": "2026-02-19",
+      "category": "regional",
+      "regions": [
+        "Maharashtra"
+      ],
+      "aliases": [
+        "Shiv Jayanti",
+        "Shivaji Jayanti"
+      ],
+      "source_urls": [
+        "https://maharashtra.gov.in/site/Upload/pdf/Public-Holiday-2026.pdf"
+      ],
+      "blurb": "Remembering Chhatrapati Shivaji Maharaj.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Maharashtra Day",
+      "date": "2026-05-01",
+      "category": "regional",
+      "regions": [
+        "Maharashtra"
+      ],
+      "aliases": [
+        "Maharashtra Din",
+        "Maharashtra Diwas"
+      ],
+      "source_urls": [
+        "https://maharashtra.gov.in/site/Upload/pdf/Public-Holiday-2026.pdf"
+      ],
+      "blurb": "Celebrating Maharashtra's statehood and culture.",
+      "motif": "confetti",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Fixed annual observance; displayed for 2026. This listing does not imply a nationwide public holiday.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Ambedkar Jayanti",
+      "date": "2026-04-14",
+      "category": "national",
+      "regions": [
+        "India"
+      ],
+      "aliases": [
+        "Bhim Jayanti",
+        "Babasaheb",
+        "B R Ambedkar"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "Honouring Dr. B. R. Ambedkar and the promise of equality.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Fixed annual observance; displayed for 2026. This listing does not imply a nationwide public holiday.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Labour Day",
+      "date": "2026-05-01",
+      "category": "national",
+      "regions": [
+        "India"
+      ],
+      "aliases": [
+        "May Day",
+        "International Workers Day",
+        "Labour's Day"
+      ],
+      "source_urls": [
+        "https://maharashtra.gov.in/site/Upload/pdf/Public-Holiday-2026.pdf"
+      ],
+      "blurb": "Appreciating the contributions and dignity of workers.",
+      "motif": "confetti",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Fixed annual observance; displayed for 2026. This listing does not imply a nationwide public holiday.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Balipratipada",
+      "date": "2026-11-10",
+      "category": "hindu",
+      "regions": [
+        "Maharashtra"
+      ],
+      "aliases": [
+        "Bali Pratipada",
+        "Diwali Padwa"
+      ],
+      "source_urls": [
+        "https://maharashtra.gov.in/site/Upload/pdf/Public-Holiday-2026.pdf"
+      ],
+      "blurb": "A celebration during the Diwali season.",
+      "motif": "diya",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Guru Ravidas Jayanti",
+      "date": "2026-02-01",
+      "category": "religious",
+      "regions": [
+        "India",
+        "Ravidassia community"
+      ],
+      "aliases": [
+        "Ravidas Birthday",
+        "Ravidas Jayanthi"
+      ],
+      "source_urls": [
+        "https://saiindia.gov.in/defence/new-delhi/en/page-defence-new-delhi-holidaylist"
+      ],
+      "blurb": "Honouring Guru Ravidas and the ideals of equality and devotion.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Valmiki Jayanti",
+      "date": "2026-10-26",
+      "category": "hindu",
+      "regions": [
+        "India"
+      ],
+      "aliases": [
+        "Maharishi Valmiki Birthday"
+      ],
+      "source_urls": [
+        "https://saiindia.gov.in/defence/new-delhi/en/page-defence-new-delhi-holidaylist"
+      ],
+      "blurb": "Honouring Maharishi Valmiki.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Rabindra Jayanti",
+      "date": "2026-05-09",
+      "category": "regional",
+      "regions": [
+        "West Bengal",
+        "Bengali community"
+      ],
+      "aliases": [
+        "Rabindranath Tagore",
+        "Rabindra Janma Jayanti"
+      ],
+      "source_urls": [
+        "https://saiindia.gov.in/defence/new-delhi/en/page-defence-new-delhi-holidaylist"
+      ],
+      "blurb": "Celebrating Rabindranath Tagore's literary and cultural legacy.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Holika Dahan",
+      "date": "2026-03-03",
+      "category": "hindu",
+      "regions": [
+        "India"
+      ],
+      "aliases": [
+        "Chhoti Holi"
+      ],
+      "source_urls": [
+        "https://saiindia.gov.in/defence/new-delhi/en/page-defence-new-delhi-holidaylist"
+      ],
+      "blurb": "The ceremonial bonfire associated with the start of Holi.",
+      "motif": "diya",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Dol Jatra",
+      "date": "2026-03-03",
+      "category": "regional",
+      "regions": [
+        "West Bengal",
+        "Assam",
+        "Odisha"
+      ],
+      "aliases": [
+        "Dolyatra",
+        "Dol Purnima",
+        "Dol Utsav"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "A spring celebration of colours and devotion.",
+      "motif": "confetti",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Durga Puja - Maha Ashtami",
+      "date": "2026-10-19",
+      "category": "hindu",
+      "regions": [
+        "West Bengal",
+        "Assam",
+        "India"
+      ],
+      "aliases": [
+        "Durga Puja",
+        "Durgashtami",
+        "Mahashtami"
+      ],
+      "source_urls": [
+        "https://saiindia.gov.in/defence/new-delhi/en/page-defence-new-delhi-holidaylist"
+      ],
+      "blurb": "Honouring Goddess Durga during the autumn Puja celebrations.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Kali Puja",
+      "date": "2026-11-08",
+      "category": "hindu",
+      "regions": [
+        "West Bengal",
+        "Assam",
+        "Odisha"
+      ],
+      "aliases": [
+        "Shyama Puja"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "A night of devotion to Goddess Kali.",
+      "motif": "diya",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Shab-e-Barat",
+      "date": "2026-02-04",
+      "category": "muslim",
+      "regions": [
+        "India"
+      ],
+      "aliases": [
+        "Shab e Barat"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "A night of prayer, reflection and seeking forgiveness.",
+      "motif": "crescent_star",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "solemn and reflective; avoid celebratory slogans",
+      "headline": "Shab-e-Barat"
+    },
+    {
+      "name": "Shab-e-Meraj",
+      "date": "2026-01-17",
+      "category": "muslim",
+      "regions": [
+        "India"
+      ],
+      "aliases": [
+        "Isra Miraj",
+        "Shab e Miraj"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "Commemorating the Prophet's night journey and ascension.",
+      "motif": "crescent_star",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "solemn and reflective; avoid celebratory slogans",
+      "headline": "Shab-e-Meraj"
+    },
+    {
+      "name": "Eid-e-Ghadeer",
+      "date": "2026-06-04",
+      "category": "muslim",
+      "regions": [
+        "India",
+        "Shia community"
+      ],
+      "aliases": [
+        "Eid al Ghadir",
+        "Eid e Ghadir"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "An observance of particular significance to Shia communities.",
+      "motif": "crescent_star",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Christmas Eve",
+      "date": "2026-12-24",
+      "category": "christian",
+      "regions": [
+        "India"
+      ],
+      "aliases": [
+        "Christmas Vigil"
+      ],
+      "source_urls": [
+        "https://www.telangana.gov.in/downloads/calendar-2026/"
+      ],
+      "blurb": "An evening of anticipation, peace and togetherness.",
+      "motif": "snow",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Puducherry Liberation Day",
+      "date": "2026-11-01",
+      "category": "regional",
+      "regions": [
+        "Puducherry"
+      ],
+      "aliases": [
+        "Pondicherry Liberation Day"
+      ],
+      "source_urls": [
+        "https://py.gov.in/sites/default/files/listofholidays-2026.pdf_0.pdf"
+      ],
+      "blurb": "Commemorating Puducherry's liberation.",
+      "motif": "confetti",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Fixed annual observance; displayed for 2026. This listing does not imply a nationwide public holiday.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "National Science Day",
+      "date": "2026-02-28",
+      "category": "professional",
+      "regions": [
+        "India"
+      ],
+      "aliases": [
+        "Science Day",
+        "C V Raman"
+      ],
+      "source_urls": [
+        "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=151846&lang=2&reg=3"
+      ],
+      "blurb": "Celebrating scientific curiosity and the discovery of the Raman effect.",
+      "motif": "confetti",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Fixed annual observance; displayed for 2026. This listing does not imply a nationwide public holiday.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "National Doctors' Day",
+      "date": "2026-07-01",
+      "category": "professional",
+      "regions": [
+        "India"
+      ],
+      "aliases": [
+        "Doctor's Day",
+        "Doctors Day",
+        "Doctors' Day"
+      ],
+      "source_urls": [
+        "https://newindiasamachar.pib.gov.in/WriteReadData/Magazine/2022/Jul/M202207011.pdf"
+      ],
+      "blurb": "Thanking doctors for their care and service.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Fixed annual observance; displayed for 2026. This listing does not imply a nationwide public holiday.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "National Sports Day",
+      "date": "2026-08-29",
+      "category": "national",
+      "regions": [
+        "India"
+      ],
+      "aliases": [
+        "Sports Day",
+        "Dhyan Chand"
+      ],
+      "source_urls": [
+        "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2160602&lang=2&reg=48"
+      ],
+      "blurb": "Celebrating sport and remembering Major Dhyan Chand.",
+      "motif": "confetti",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "Fixed annual observance; displayed for 2026. This listing does not imply a nationwide public holiday.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Me-Dam-Me-Phi",
+      "date": "2026-01-31",
+      "category": "regional",
+      "regions": [
+        "Assam",
+        "Ahom community"
+      ],
+      "aliases": [
+        "Me Dam Me Phi"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "An Ahom observance honouring ancestors.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "solemn and reflective; avoid celebratory slogans",
+      "headline": "Me-Dam-Me-Phi"
+    },
+    {
+      "name": "Gwthar Bathou San",
+      "date": "2026-01-27",
+      "category": "regional",
+      "regions": [
+        "Assam",
+        "Bodo community"
+      ],
+      "aliases": [
+        "Bathou Puja",
+        "Bathou San"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "An observance of the Bathou tradition.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Busu Dima",
+      "date": "2026-01-27",
+      "category": "regional",
+      "regions": [
+        "Assam",
+        "Dimasa community"
+      ],
+      "aliases": [
+        "Bushu Dima",
+        "Busu Dima Festival"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "A celebration of Dimasa cultural traditions.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Ali Aye Ligang",
+      "date": "2026-02-18",
+      "category": "regional",
+      "regions": [
+        "Assam",
+        "Mising community"
+      ],
+      "aliases": [
+        "Ali Ai Ligang",
+        "Ali Aye Ligang"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "A Mising agricultural festival marking the sowing season.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Rongker Karkli",
+      "date": "2026-01-05",
+      "category": "regional",
+      "regions": [
+        "Assam",
+        "Karbi community"
+      ],
+      "aliases": [
+        "Rongker",
+        "Rongker Festival"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "A Karbi community observance.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Karam Puja",
+      "date": "2026-09-22",
+      "category": "regional",
+      "regions": [
+        "Assam",
+        "Jharkhand",
+        "Odisha",
+        "West Bengal",
+        "Adivasi communities"
+      ],
+      "aliases": [
+        "Karma Puja",
+        "Karam Parab"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "A community celebration associated with the Karam tree.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "22 September follows the Assam state calendar; local/community dates may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Srimanta Sankardeva Janmotsav",
+      "date": "2026-09-21",
+      "category": "regional",
+      "regions": [
+        "Assam"
+      ],
+      "aliases": [
+        "Sankardev Jayanti",
+        "Sankardeva Birthday"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "Honouring the life and teachings of Srimanta Sankardeva.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Madhabdeva Janmotsav",
+      "date": "2026-06-01",
+      "category": "regional",
+      "regions": [
+        "Assam"
+      ],
+      "aliases": [
+        "Madhavdev Jayanti",
+        "Madhabdev Birthday"
+      ],
+      "source_urls": [
+        "https://diphumch.assam.gov.in/sites/default/files/public_utility/Assam-Government-Holiday-List-2026-PDF_0.pdf"
+      ],
+      "blurb": "Honouring the spiritual and literary legacy of Madhabdeva.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Behdeinkhlam",
+      "date": "2026-07-09",
+      "category": "regional",
+      "regions": [
+        "Meghalaya",
+        "Pnar",
+        "Jaintia"
+      ],
+      "aliases": [
+        "Behdienkhlam",
+        "Beh Deinkhlam"
+      ],
+      "source_urls": [
+        "https://gad.meghalaya.gov.in/assets/docs/HolidayList_2026.pdf"
+      ],
+      "blurb": "A traditional Pnar festival in the Jaintia Hills.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Wangala",
+      "date": "2026-11-13",
+      "category": "regional",
+      "regions": [
+        "Meghalaya",
+        "Garo community"
+      ],
+      "aliases": [
+        "Hundred Drums Festival"
+      ],
+      "source_urls": [
+        "https://gad.meghalaya.gov.in/assets/docs/HolidayList_2026.pdf"
+      ],
+      "blurb": "A Garo harvest celebration.",
+      "motif": "rangoli",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "13 November is the Meghalaya holiday reference; festival programmes can span multiple days.",
+      "tone": "warm and respectful"
+    },
+    {
+      "name": "Seng Kut Snem",
+      "date": "2026-11-23",
+      "category": "regional",
+      "regions": [
+        "Meghalaya",
+        "Khasi community"
+      ],
+      "aliases": [
+        "Sengkut Snem"
+      ],
+      "source_urls": [
+        "https://gad.meghalaya.gov.in/assets/docs/HolidayList_2026.pdf"
+      ],
+      "blurb": "Celebrating Khasi cultural traditions.",
+      "motif": "bloom",
+      "palette": [
+        "#163F38",
+        "#326F58",
+        "#C89943",
+        "#F3DB9B"
+      ],
+      "date_note": "2026 reference date; regional observances may differ.",
+      "tone": "warm and respectful"
+    }
+  ]
+}
+

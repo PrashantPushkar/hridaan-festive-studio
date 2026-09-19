@@ -1,0 +1,50 @@
+# Paid compute is required for persistent SQLite and image storage.
+# Review Render's displayed recurring price before creating this service.
+services:
+  - type: web
+    name: hridaan-festive-studio
+    runtime: python
+    plan: 0.5c-512mb
+    region: singapore
+    numInstances: 1
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.app:app --host 0.0.0.0 --port $PORT --workers 1 --no-access-log
+    healthCheckPath: /health
+    disk:
+      name: festive-studio-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: STUDIO_AUTH_MODE
+        value: accounts
+      - key: DATA_DIR
+        value: /var/data
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: SMTP_HOST
+        value: smtp.zeptomail.in
+      - key: SMTP_PORT
+        value: "465"
+      - key: SMTP_USERNAME
+        value: emailapikey
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: MAIL_FROM
+        value: hello@hridaanlabs.com
+      - key: MAIL_REPLY_TO
+        value: prashant@hridaanlabs.com
+      - key: DAILY_GENERATION_LIMIT
+        value: "20"
+      - key: ACCOUNT_POLICIES_REVIEWED
+        value: "false"
+      - key: PRIVACY_POLICY_URL
+        value: https://hridaanlabs.com/privacy
+      - key: TERMS_URL
+        sync: false
+
