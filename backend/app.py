@@ -33,6 +33,9 @@ ACCOUNT_MODE = os.environ.get('STUDIO_AUTH_MODE', 'accounts') != 'legacy'
 if PRODUCTION and not ACCOUNT_MODE:
     raise RuntimeError('Production requires verified account authentication.')
 PASSWORD = os.environ.get('APP_PASSWORD', '')
+OWNER_PREVIEW_TOKEN = os.environ.get('OWNER_PREVIEW_TOKEN', '')
+if PRODUCTION and OWNER_PREVIEW_TOKEN and len(OWNER_PREVIEW_TOKEN) < 32:
+    raise RuntimeError('OWNER_PREVIEW_TOKEN must contain at least 32 characters.')
 SESSION_SECRET = os.environ.get('SESSION_SECRET', '')
 if PRODUCTION and len(SESSION_SECRET) < 32:
     raise RuntimeError('Production requires SESSION_SECRET (32+ characters).')
@@ -109,7 +112,13 @@ async def boundaries(request: Request, call_next):
     return response
 
 
+def owner_preview_active(request: Request):
+    return bool(request.session.get('owner_preview'))
+
+
 def owner(request: Request):
+    if owner_preview_active(request):
+        return 'owner-preview'
     if ACCOUNT_MODE:
         user = accounts.current_user(request)
         if not user['email_verified']:
@@ -149,6 +158,10 @@ class Login(BaseModel):
     password: str = Field(max_length=256)
 
 
+class OwnerPreview(BaseModel):
+    token: str = Field(min_length=32, max_length=256)
+
+
 class Generate(BaseModel):
     festival_id: int = Field(ge=0, lt=len(engine.FESTIVALS_2026))
     brand: str = Field(default='Hridaan Labs', max_length=48)
@@ -178,6 +191,8 @@ def health():
 
 @app.get('/api/session')
 def session(request: Request):
+    if owner_preview_active(request):
+        return {'authenticated':True, 'account_mode':False, 'owner_preview':True, 'user':None, 'password_required':False, 'ai_available':bool(os.environ.get('OPENAI_API_KEY')), 'product':'Festive Studio'}
     if ACCOUNT_MODE:
         user = accounts.current_user(request, required=False)
         return {'authenticated':bool(user), 'account_mode':True, 'user':accounts.public_user(user), 'password_required':False, 'ai_available':bool(os.environ.get('OPENAI_API_KEY')), 'product':'Festive Studio'}
@@ -185,6 +200,16 @@ def session(request: Request):
     if authenticated:
         owner(request)
     return {'authenticated': authenticated, 'password_required': bool(PASSWORD), 'ai_available': bool(os.environ.get('OPENAI_API_KEY')), 'product': 'Festive Studio'}
+
+
+@app.post('/api/owner-preview')
+def start_owner_preview(payload: OwnerPreview, request: Request):
+    if not OWNER_PREVIEW_TOKEN or not secrets.compare_digest(payload.token.encode(), OWNER_PREVIEW_TOKEN.encode()):
+        raise HTTPException(404, 'Owner preview is unavailable.')
+    request.session.clear()
+    request.session['owner_preview'] = True
+    request.session['owner'] = 'owner-preview'
+    return {'ok':True}
 
 
 login_attempts = {}
@@ -323,7 +348,7 @@ async def render(run, background=None):
 
 
 @app.post('/api/greetings', status_code=202)
-async def generate(payload: Generate, user=Depends(owner)):
+async def generate(payload: Generate, request: Request, user=Depends(owner)):
     brand = payload.brand.strip()
     if payload.sender_type == 'company' and not brand:
         raise HTTPException(422, 'Enter a company name or choose Individual.')
@@ -337,7 +362,7 @@ async def generate(payload: Generate, user=Depends(owner)):
     run = dict(payload.model_dump(mode='json', exclude={'logo_base64'}), id=uuid.uuid4().hex, owner=user, brand=brand, created_at=now,
                status='queued', festival_name=festival['name'], headline=default_headline(festival),
                subline=(f'From all of us at {brand}' if payload.sender_type == 'company' else f'With warm wishes, {brand}' if brand else ''), tagline='', message='', revision=0, has_logo=bool(logo), festival_snapshot=dict(festival))
-    run['account_mode'] = ACCOUNT_MODE
+    run['account_mode'] = ACCOUNT_MODE and not owner_preview_active(request)
     run['greeting_date'] = payload.greeting_date.isoformat() if payload.greeting_date else festival['date']
     run['date_note'] = festival.get('date_note', '')
     run['date_is_custom'] = run['greeting_date'] != festival['date']
@@ -349,7 +374,7 @@ async def generate(payload: Generate, user=Depends(owner)):
         count = db.execute('SELECT count(*) FROM greetings WHERE created>=?', (now[:10],)).fetchone()[0]
         if count >= int(os.environ.get('DAILY_GENERATION_LIMIT', '20')):
             raise HTTPException(429, 'Today’s generation limit has been reached.')
-        if ACCOUNT_MODE:
+        if run['account_mode']:
             accounts.reserve(db, user, run['id'])
             accounts.event('festive_studio_generation_started', db)
         db.execute('INSERT INTO greetings VALUES (?, ?, ?, ?, ?)', (run['id'], user, now, run['status'], json.dumps(run)))
@@ -431,6 +456,12 @@ def home():
     return FileResponse(ROOT / 'public/index.html')
 
 
+@app.get('/owner-preview')
+def owner_preview_page():
+    return FileResponse(ROOT / 'public/owner-preview.html')
+
+
 app.mount('/assets', StaticFiles(directory=ROOT / 'public'), name='assets')
 app.mount('/fonts', StaticFiles(directory=ROOT / 'backend/assets/fonts'), name='fonts')
+
 
