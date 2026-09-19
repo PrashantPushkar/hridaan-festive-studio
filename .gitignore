@@ -5,9 +5,11 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+.pytest_tmp_*/
 data/
 *.log
 .DS_Store
 node_modules/
 test-results/
+
 
